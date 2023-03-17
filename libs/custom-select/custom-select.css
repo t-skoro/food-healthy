@@ -1,0 +1,89 @@
+.custom-select-container {
+  position: relative;
+  box-sizing: border-box;
+
+  padding: 22px 25px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #9D9D9D;
+  cursor: pointer;
+  border: 1px solid #A4AB8D;
+
+  transition: all .3s ease-in;
+}
+
+.custom-select-container:hover {
+  box-shadow: 1px 2px 3px #92987b;
+}
+
+.custom-select-container * {
+  box-sizing: border-box;
+}
+
+.custom-select-container.is-disabled {
+  opacity: .333;
+}
+
+.custom-select-opener {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+.custom-select-container select {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.custom-select-panel {
+  max-height: 0;
+  /* transition: max-height .7s ease-out, overflow-y 0.1s 0.5s; */
+  transition: max-height .5s ease-out;
+  overflow: hidden;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  width: 100%;
+
+  margin-left: -25px;
+  box-shadow: 1px 2px 3px #92987b, -1px -2px 3px #92987b;
+}
+
+.custom-select-container.is-open .custom-select-panel {
+  max-height: 10.7em;
+  /* overflow-y: auto; - полоса прокрутки */
+}
+
+.custom-select-option {
+  padding: 9px 25px;
+}
+
+.custom-select-option.has-focus {
+  background-color: #F1F4E6;
+  cursor: pointer;
+}
+
+.custom-select-option.is-selected::before {
+  content: "✔";
+  padding-right: 0.5em;
+}
+
+.custom-select-optgroup>.custom-select-option {
+  padding-left: 2em;
+}
+
+.custom-select-optgroup::before {
+  content: attr(data-label);
+  display: block;
+  padding: 0.5em;
+  color: #888;
+}

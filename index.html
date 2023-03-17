@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полезное питание</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/custom-select/custom-select.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+
+                <a href="#" class="logo">
+                    <img src="img/icons/logo.svg" alt="Logo">
+                </a>
+                
+                <div class="nav__menu">
+                    <a href="#" class="nav__menu-hamburger">
+                        <img src="img/icons/menu.svg" alt="Menu">
+                    </a>
+                    <a href="#" class="nav__menu-title">Меню <span>рационов</span></a>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Заказать</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                </ul>
+
+                <a href="#" class="nav__cart">
+                    <img src="img/icons/cart.svg" alt="Cart">
+                    <span class="count">(0)</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero__wrapper">
+                <div class="hero__info">
+                    <h1 class="hero__title">Полезное питание для самых занятых</h1>
+                    <p class="hero__description">Экономим ваше время и сохраняем ваше здоровье и тело!</p>
+                    <button class="button">Выбрать рацион</button>
+                </div>
+                <div class="hero__picture">
+                    <div class="hero__img">
+                        <img src="img/hero-img.png" alt="П">
+                    </div>
+
+                    <div class="hero__video">
+                        <span class="hero__text">Посмотрите, как мы готовим</span>
+                        <div class="hero__arrow">
+                            <img src="img/icons/arrow.svg" alt="Arrow">
+                        </div>
+
+                        <a href="#" class="hero__play hero__play--ellipse"></a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.hero__wrapper -->
+
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <div class="products__row">
+                <h2 class="products__title">Выберите рацион</h2>
+                <div class="products__button">
+                    <button class="products__button-left"></button>
+                    <button class="products__button-right"></button>
+                </div>
+            </div>
+            <!-- /.products__row -->
+
+            <div class="products__cards">
+                <a href="#" class="products__card-item">
+                    <div class="products__card-img card-img-1"></div>
+                    <div class="products__card-row">
+                        <div class="products__card-desc">
+                            <h3 class="products__card-title">
+                                Снижение веса
+                            </h3>
+                            <p>1200 ккал/день</p>
+                        </div>
+                        <button class="button smoll-button"></button>
+                    </div>
+                </a>
+                <!-- /.products__card-item -->
+                <a href="#" class="products__card-item">
+                    <div class="products__card-img card-img-2"></div>
+                    <div class="products__card-row">
+                        <div class="products__card-desc">
+                            <h3 class="products__card-title">
+                                Набор массы
+                            </h3>
+                            <p>2200 ккал/день</p>
+                        </div>
+                        <button class="button smoll-button"></button>
+                    </div>
+                </a>
+                <!-- /.products__card-item -->
+                <a href="#" class="products__card-item">
+                    <div class="products__card-img card-img-3"></div>
+                    <div class="products__card-row">
+                        <div class="products__card-desc">
+                            <h3 class="products__card-title">
+                                Баланс питания
+                            </h3>
+                            <p>1500 ккал/день</p>
+                        </div>
+                        <button class="button smoll-button"></button>
+                    </div>
+                </a>
+                <!-- /.products__card-item -->
+            </div>
+            <!-- /.products__cards -->
+
+            <ul class="products__card-list">
+                <li class="products__card-slider">
+                    <label for="card-1" class="products__card-pagination">
+                        <input type="radio" name="card" id="card-1" class="products__card-control" checked>
+                        <div class="products__card-display"></div>
+                    </label>
+                </li>
+                <li class="products__card-slider">
+                    <label for="card-2" class="products__card-pagination">
+                        <input type="radio" name="card" id="card-2" class="products__card-control">
+                        <div class="products__card-display"></div>
+                    </label>
+                </li>
+                <li class="products__card-slider">
+                    <label for="card-3" class="products__card-pagination">
+                        <input type="radio" name="card" id="card-3" class="products__card-control">
+                        <div class="products__card-display"></div>
+                    </label>
+                </li>
+                <li class="products__card-slider">
+                    <label for="card-4" class="products__card-pagination">
+                        <input type="radio" name="card" id="card-4" class="products__card-control">
+                        <div class="products__card-display"></div>
+                    </label>
+                </li>
+            </ul>
+
+            <div class="products__button products__button--mobile">
+                <button class="products__button-left"></button>
+                <button class="products__button-right"></button>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section class="offer">
+        <div class="container">
+            <div class="offer__row">
+                <div class="offer__description">
+                    <h2 class="offer__title">Закажите свой рацион</h2>
+                    <p>Выберите рацион, заполните данные и наш менеджер свяжется с вами <br> для подтверждения заказа
+                    </p>
+                </div>
+
+                <form action="" class="offer__form">
+                    <div class="offer__input">
+                        <select name="selected-category" id="select" class="offer__select">
+                            <option value="1" selected>Выбрать рацион</option>
+                            <option value="2">Снижение веса</option>
+                            <option value="3">Набор массы</option>
+                            <option value="4">Баланс питания</option>
+                        </select>
+
+                        <input type="text" placeholder="Ваше имя" class="offer__input-name">
+                        <input type="text" placeholder="Ваш телефон" class="offer__input-phone">
+
+                        <button type="submit" class="button offer__button">Выбрать рацион</button>
+                    </div>
+                </form>
+
+                <div class="offer__image"></div>
+            </div>
+            <!-- /.offer__row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <a href="#" class="footer__logo">
+                    <img src="img/icons/logo.svg" alt="Логотип">
+                </a>
+
+                <div class="footer__info">
+                    <p> Мы на связи с вами</p>
+                    <a href="tel:+73339639999" class="footer__phone">
+                        + 7 (333) 963 99 99
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <script src="libs/custom-select/custom-select.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
