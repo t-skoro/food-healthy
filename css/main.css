@@ -239,7 +239,7 @@ p {
 
 .products {
     padding: 80px 0;
-    background-color: #F1F4E6;
+    background-color: #F1F4B6;
 }
 
 .products__title {
@@ -540,7 +540,7 @@ p {
 
 .footer {
     padding: 40px 0 70px;
-    background-color: #F1F4E6;
+    background-color: #F1F4B6;
 }
 
 .footer__row {
@@ -658,13 +658,6 @@ p {
         position: relative;
     }
 
-    .products__button--mobile {
-        display: flex;
-        position: absolute;
-        left: 39%;
-        bottom: 40px;
-    }
-
     .products__cards {
         flex-direction: column;
         margin-bottom: 0;
@@ -682,6 +675,26 @@ p {
 
     .button.smoll-button {
         width: 70px;
+    }
+
+    .products__button--mobile {
+        display: flex;
+        position: relative;
+    }
+
+    .products__button-left--mobile {
+        margin-right: 0;
+        position: absolute;
+        top: 0;
+        left: 45px;
+        transform: translateY(-95%);
+    }
+    
+    .products__button-right--mobile {
+        position: absolute;
+        top: 0;
+        right: 45px;
+        transform: translateY(-95%);
     }
 
     .offer {
