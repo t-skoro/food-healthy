@@ -1,0 +1,160 @@
+/* --- mobile --- */
+@media (max-width: 375px) {
+    .container {
+        max-width: 345px;
+        margin: 0 auto;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__menu-title span {
+        display: none;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .nav__menu {
+        order: -1;
+        margin-right: 0;
+    }
+
+    .nav__cart {
+        padding-left: 18px;
+    }
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+
+    .hero__wrapper {
+        flex-direction: column;
+    }
+
+    .hero__title {
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-weight: 500;
+        font-size: 35px;
+    }
+
+    .hero__description {
+        margin-bottom: 40px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .hero__picture {
+        padding-top: 60px;
+        position: relative;
+        margin-left: 0;
+    }
+
+    .hero__video {
+        left: 35%;
+        top: 47%;
+    }
+
+    .hero__arrow {
+        padding-left: 40px;
+    }
+
+    .hero__play {
+        transform: translate(-75%, 43%);
+    }
+
+    .products__title {
+        font-size: 35px;
+    }
+
+    .products__button {
+        display: none;
+    }
+
+    .products {
+        position: relative;
+    }
+
+    .products__cards {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .products__card-item {
+        max-width: 345px;
+        margin-bottom: 40px;
+    }
+
+    .products__card-img {
+        width: 285px;
+        height: 324px;
+    }
+
+    .owl-carousel .owl-stage {
+        margin-bottom: 0;
+    }
+
+    .button.smoll-button {
+        width: 70px;
+    }
+
+    .products__button--mobile {
+        display: flex;
+        position: relative;
+        z-index: 999;
+    }
+
+    .products__button-left--mobile {
+        margin-right: 0;
+        position: absolute;
+        top: 0;
+        left: 40px;
+        transform: translateY(-95%);
+    }
+
+    .products__button-right--mobile {
+        position: absolute;
+        top: 0;
+        right: 40px;
+        transform: translateY(-95%);
+    }
+
+    .offer {
+        padding: 90px 0;
+    }
+
+    .offer__row {
+        flex-direction: column;
+    }
+
+    .offer__title {
+        font-size: 35px;
+    }
+
+    .offer__description p {
+        margin-bottom: 40px;
+    }
+
+    .offer__form {
+        max-width: unset;
+        width: 100%;
+    }
+
+    .offer__image {
+        display: none;
+    }
+
+    .footer {
+        padding: 40px 0 42px;
+    }
+}

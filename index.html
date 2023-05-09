@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Полезное питание</title>
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/custom-select/custom-select.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Полезное питание</title>
 </head>
 
 <body>
@@ -22,18 +28,18 @@
                 <a href="#" class="logo">
                     <img src="img/icons/logo.svg" alt="Logo">
                 </a>
-                
+
                 <div class="nav__menu">
                     <a href="#" class="nav__menu-hamburger">
                         <img src="img/icons/menu.svg" alt="Menu">
                     </a>
-                    <a href="#" class="nav__menu-title">Меню <span>рационов</span></a>
+                    <a href="#products" class="nav__menu-title">Меню <span>рационов</span></a>
                 </div>
 
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Заказать</a></li>
+                    <li class="nav__item"><a href="#offer" class="nav__link">Заказать</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                    <li class="nav__item"><a href="#footer" class="nav__link">Контакты</a></li>
                 </ul>
 
                 <a href="#" class="nav__cart">
@@ -54,7 +60,7 @@
                 </div>
                 <div class="hero__picture">
                     <div class="hero__img">
-                        <img src="img/hero-img.png" alt="П">
+                        <img src="img/hero-img.png" alt="Полезное питание">
                     </div>
 
                     <div class="hero__video">
@@ -63,7 +69,12 @@
                             <img src="img/icons/arrow.svg" alt="Arrow">
                         </div>
 
-                        <a href="#" class="hero__play hero__play--ellipse"></a>
+                        <a href="https://www.youtube.com/watch?v=E_0AsAxtdxw" class="hero__play" data-fancybox>
+                            <svg width="18" height="26" viewBox="0 0 18 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 13.0095L0 25.1334V0.885641L18 13.0095Z" fill="white" />
+                            </svg>
+                        </a>
                     </div>
 
                 </div>
@@ -73,97 +84,100 @@
         </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
         <div class="container">
             <div class="products__row">
                 <h2 class="products__title">Выберите рацион</h2>
                 <div class="products__button">
-                    <button class="products__button-left"></button>
-                    <button class="products__button-right"></button>
+                    <button class="products__button-left arrow-prev"></button>
+                    <button class="products__button-right arrow-next"></button>
                 </div>
             </div>
             <!-- /.products__row -->
 
-            <div class="products__cards">
-                <a href="#" class="products__card-item">
-                    <div class="products__card-img card-img-1"></div>
-                    <div class="products__card-row">
-                        <div class="products__card-desc">
-                            <h3 class="products__card-title">
-                                Снижение веса
-                            </h3>
-                            <p>1200 ккал/день</p>
-                        </div>
-                        <button class="button smoll-button"></button>
-                    </div>
-                </a>
-                <!-- /.products__card-item -->
-                <a href="#" class="products__card-item">
-                    <div class="products__card-img card-img-2"></div>
-                    <div class="products__card-row">
-                        <div class="products__card-desc">
-                            <h3 class="products__card-title">
-                                Набор массы
-                            </h3>
-                            <p>2200 ккал/день</p>
-                        </div>
-                        <button class="button smoll-button"></button>
-                    </div>
-                </a>
-                <!-- /.products__card-item -->
-                <a href="#" class="products__card-item">
-                    <div class="products__card-img card-img-3"></div>
-                    <div class="products__card-row">
-                        <div class="products__card-desc">
-                            <h3 class="products__card-title">
-                                Баланс питания
-                            </h3>
-                            <p>1500 ккал/день</p>
-                        </div>
-                        <button class="button smoll-button"></button>
-                    </div>
-                </a>
-                <!-- /.products__card-item -->
-            </div>
-            <!-- /.products__cards -->
+            <div class="products__cards-wrapper">
+                <div class="products__cards owl-carousel">
 
-            <ul class="products__card-list">
-                <li class="products__card-slider">
-                    <label for="card-1" class="products__card-pagination">
-                        <input type="radio" name="card" id="card-1" class="products__card-control" checked>
-                        <div class="products__card-display"></div>
-                    </label>
-                </li>
-                <li class="products__card-slider">
-                    <label for="card-2" class="products__card-pagination">
-                        <input type="radio" name="card" id="card-2" class="products__card-control">
-                        <div class="products__card-display"></div>
-                    </label>
-                </li>
-                <li class="products__card-slider">
-                    <label for="card-3" class="products__card-pagination">
-                        <input type="radio" name="card" id="card-3" class="products__card-control">
-                        <div class="products__card-display"></div>
-                    </label>
-                </li>
-                <li class="products__card-slider">
-                    <label for="card-4" class="products__card-pagination">
-                        <input type="radio" name="card" id="card-4" class="products__card-control">
-                        <div class="products__card-display"></div>
-                    </label>
-                </li>
-            </ul>
+                    <a href="#" class="products__card-item">
+                        <div class="products__card-img card-img-1"></div>
+                        <div class="products__card-row">
+                            <div class="products__card-desc">
+                                <h3 class="products__card-title">
+                                    Набор массы
+                                </h3>
+                                <p>2200 ккал/день</p>
+                            </div>
+                            <button class="button smoll-button"></button>
+                        </div>
+                    </a>
+                    <!-- /.products__card-item -->
+                    <a href="#" class="products__card-item">
+                        <div class="products__card-img card-img-2"></div>
+                        <div class="products__card-row">
+                            <div class="products__card-desc">
+                                <h3 class="products__card-title">
+                                    Баланс питания
+                                </h3>
+                                <p>1500 ккал/день</p>
+                            </div>
+                            <button class="button smoll-button"></button>
+                        </div>
+                    </a>
+                    <!-- /.products__card-item -->
+                    <a href="#" class="products__card-item">
+                        <div class="products__card-img card-img-4"></div>
+                        <div class="products__card-row">
+                            <div class="products__card-desc">
+                                <h3 class="products__card-title">
+                                    Разгрузочный день
+                                </h3>
+                                <p>800 ккал/день</p>
+                            </div>
+                            <button class="button smoll-button"></button>
+                        </div>
+                    </a>
+                    <!-- /.products__card-item -->
+                    <a href="#" class="products__card-item">
+                        <div class="products__card-img card-img-5"></div>
+                        <div class="products__card-row">
+                            <div class="products__card-desc">
+                                <h3 class="products__card-title">
+                                    Снижение веса
+                                </h3>
+                                <p>1200 ккал/день</p>
+                            </div>
+                            <button class="button smoll-button"></button>
+                        </div>
+                    </a>
+                    <!-- /.products__card-item -->
+                    <a href="#" class="products__card-item">
+                        <div class="products__card-img card-img-3"></div>
+                        <div class="products__card-row">
+                            <div class="products__card-desc">
+                                <h3 class="products__card-title">
+                                    Витамины
+                                </h3>
+                                <p>1000 ккал/день</p>
+                            </div>
+                            <button class="button smoll-button"></button>
+                        </div>
+                    </a>
+                    <!-- /.products__card-item -->
+                </div>
+                <!-- /.products__cards -->
+            </div>
+            <!-- /.products__cards-wrapper -->
 
             <div class="products__button products__button--mobile">
-                <button class="products__button-left products__button-left--mobile"></button>
-                <button class="products__button-right products__button-right--mobile"></button>
+                <button class="products__button-left products__button-left--mobile arrow-prev"></button>
+                <button class="products__button-right products__button-right--mobile arrow-next"></button>
             </div>
 
         </div>
         <!-- /.container -->
     </section>
 
-    <section class="offer">
+    <section class="offer" id="offer">
         <div class="container">
             <div class="offer__row">
                 <div class="offer__description">
@@ -179,6 +193,8 @@
                             <option value="2">Снижение веса</option>
                             <option value="3">Набор массы</option>
                             <option value="4">Баланс питания</option>
+                            <option value="5">Витамины</option>
+                            <option value="6">Разгрузочный день</option>
                         </select>
 
                         <input type="text" placeholder="Ваше имя" class="offer__input-name">
@@ -195,7 +211,7 @@
         <!-- /.container -->
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__row">
                 <a href="#" class="footer__logo">
@@ -213,7 +229,15 @@
         <!-- /.container -->
     </footer>
 
+
+    <script src="libs/jquery/jquery-3.6.4.min.js"></script>
+
     <script src="libs/custom-select/custom-select.min.js"></script>
+
+    <script src="libs/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
     <script src="js/main.js"></script>
 </body>
 
