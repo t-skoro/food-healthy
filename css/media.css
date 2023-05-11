@@ -92,7 +92,6 @@
 
     .products__card-item {
         max-width: 345px;
-        margin-bottom: 40px;
     }
 
     .products__card-img {
@@ -101,7 +100,7 @@
     }
 
     .owl-carousel .owl-stage {
-        margin-bottom: 0;
+        margin-bottom: 40px;
     }
 
     .button.smoll-button {

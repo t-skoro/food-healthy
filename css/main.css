@@ -245,7 +245,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
 }
 
 .products__button {
@@ -395,7 +394,7 @@ p {
 }
 
 .owl-carousel .owl-stage {
-    margin-bottom: 40px;
+   margin: 40px 0 30px;
 }
 
 .offer {
