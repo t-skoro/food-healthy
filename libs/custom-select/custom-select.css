@@ -60,11 +60,12 @@
 
 .custom-select-container.is-open .custom-select-panel {
   max-height: 10.7em;
-  /* overflow-y: auto; - полоса прокрутки */
+  overflow-y: auto;
+  /* полоса прокрутки */
 }
 
 .custom-select-option {
-  padding: 5px 25px;
+  padding: 7px 25px;
 }
 
 .custom-select-option.has-focus {
