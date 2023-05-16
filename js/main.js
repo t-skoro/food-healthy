@@ -26,11 +26,11 @@ $(document).ready(function () {
         // stagePadding: 40, - отображение соседних карточек
         center: true,
         responsive: {
-            400: {
-                items: 2,
-                center: true
-            },
             768: {
+                items: 2,
+                center: false
+            },
+            992: {
                 items: 3,
                 center: true
             },

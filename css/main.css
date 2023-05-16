@@ -184,6 +184,10 @@ p {
     margin-left: 13px;
 }
 
+.hero__img img {
+    width: 100%;
+}
+
 .hero__video {
     position: absolute;
     top: 40%;
@@ -427,7 +431,7 @@ p {
 }
 
 .offer__form {
-    max-width: 320px;
+    width: 320px;
 }
 
 .offer__input {
@@ -523,7 +527,7 @@ p {
 }
 
 .footer {
-    padding: 40px 0 70px;
+    padding: 40px 0 42px;
     background-color: #F1F4B6;
 }
 
