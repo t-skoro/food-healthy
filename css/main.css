@@ -324,7 +324,7 @@ p {
 
 .card-img-2 {
     background-image: url('../img/card/image-2.png');
-    background-position: 37% 29%;
+    background-position: 40% 29%;
 }
 
 .card-img-3 {
@@ -398,7 +398,7 @@ p {
 }
 
 .owl-carousel .owl-stage {
-   margin: 40px 0 30px;
+    margin: 40px 0 30px;
 }
 
 .offer {
