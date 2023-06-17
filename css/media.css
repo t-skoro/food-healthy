@@ -239,12 +239,12 @@
     }
 
     .products__card-item {
-        width: 335px;
+        width: 330px;
     }
 
     .products__card-img {
-        width: 275px;
-        height: 320px;
+        width: 270px;
+        height: 315px;
     }
 
     .owl-carousel .owl-stage {
