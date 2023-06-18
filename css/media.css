@@ -1,6 +1,6 @@
-/* --- mobile --- */
-/* 1200px - 1365px */
+/* ----- mobile ----- */
 
+/* 1200px - 1365px */
 @media (max-width: 1365px) {
     .container {
         max-width: 1140px;
@@ -98,7 +98,7 @@
     }
 }
 
-/* 768px - 991px */
+/* 701px - 991px */
 @media (max-width: 991px) {
     .container {
         width: 700px;
@@ -143,11 +143,7 @@
 /* 575px - 767px */
 /* @media (max-width: 767px) {} */
 
-/* 375px - 574px */
-/* @media (max-width: 574px) {} */
-
-
-/* 1px - 700px */
+/* 360px - 700px */
 @media (max-width: 700px) {
     .container {
         width: 100%;

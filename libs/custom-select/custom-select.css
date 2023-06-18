@@ -59,13 +59,14 @@
 }
 
 .custom-select-container.is-open .custom-select-panel {
-  max-height: 10.7em;
+  /* max-height: 10.7em; */
+  max-height: 9em;
   overflow-y: auto;
   /* полоса прокрутки */
 }
 
 .custom-select-option {
-  padding: 7px 25px;
+  padding: 12px 25px;
 }
 
 .custom-select-option.has-focus {
