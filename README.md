@@ -1,4 +1,4 @@
 # food-healthy
-Проект UX/UI Айтилогия
+Макет проекта UX/UI от Айтилогии
 
 ### https://t-skoro.github.io/food-healthy
